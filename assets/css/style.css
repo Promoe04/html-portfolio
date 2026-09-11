@@ -358,7 +358,7 @@ p { margin: 0; }
 }
 
 .project-card__title { font-size: 1.2rem; font-weight: 700; }
-.project-card__desc { color: var(--text-dim); font-size: 0.94rem; }
+.project-card__desc { color: var(--text-dim); font-size: 0.94rem; flex: 1; }
 
 .project-card__features {
   margin: 0;
@@ -370,6 +370,8 @@ p { margin: 0; }
   font-size: 0.88rem;
   flex: 1;
 }
+
+.project-card--major .project-card__desc { flex: none; }
 
 .project-card__features li::marker { color: var(--accent-2); }
 
@@ -393,6 +395,10 @@ p { margin: 0; }
 /* Thumb variants (pure CSS illustrations, no external images) */
 .thumb--tutorly { background: linear-gradient(135deg, #163425, #0a1912); }
 .thumb--titan { background: linear-gradient(135deg, #391a3f, #170a22); }
+.thumb--hospital-db { background: linear-gradient(135deg, #142a3d, #0a1420); }
+.thumb--hospital-ds { background: linear-gradient(135deg, #1a2044, #0c0f22); }
+.thumb--dblec { background: linear-gradient(135deg, #241a38, #120c1f); }
+.thumb--practice { background: linear-gradient(135deg, #1f2a1a, #0f150c); }
 
 .project-card--major .project-card__thumb { height: 140px; }
 
