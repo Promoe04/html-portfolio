@@ -617,6 +617,7 @@ p { margin: 0; }
 }
 .form-status.is-visible { display: block; }
 .form-status--ok { background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.32); color: #15803d; }
+.form-status--error { background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.32); color: #b91c1c; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
