@@ -1,21 +1,32 @@
-# html-portfolio
-simple projects just as a startup
-<!DOCTYPE html>
- <html lang="eng">
-    <head>
-    <meta charset="UTF-8">
-    <title> Moemen's Potrfolio</title>
-</head>
-<body>
-    <h1>M.Moemen Ghazzawi's Portfolio</h1>
-    <h2> I'm a second year CS student</h2>
-    <hr />
-    <h3><a href="./public/movie-ranking.html">Movie ranking project</a></h3>
-<img src="./assets/imm0v.png" alt="movie ranking">
-<h3><a href="./public/birthday-invite.html">Birthday invite project</a></h3>
-<img src="./assets/images/image.png" alt="birthday invite project">
-<hr />
-<a href="./public/about.html">About Me</a>
-<a href="./public/contact.html">Contact Me</a>
-</body>
- </html>
+# Moemen Ghazzawi — Portfolio
+
+A personal portfolio site for M. Moemen Ghazzawi, a second-year Computer Science
+student. Built with plain HTML, CSS, and JavaScript — no frameworks, no build step.
+
+## Structure
+
+```
+.
+├── index.html                     Home page
+├── assets/
+│   ├── css/style.css               Shared design system
+│   └── js/
+│       ├── main.js                 Nav toggle, scroll reveal, skill bars
+│       ├── movie-ranking.js         Movie Ranking project logic
+│       └── birthday.js              Birthday Invite countdown + confetti
+└── public/
+    ├── about.html                  About page
+    ├── contact.html                Contact page
+    ├── movie-ranking.html          Project: rate & rank movies
+    └── birthday-invite.html        Project: animated birthday invite
+```
+
+## Running locally
+
+No build tools required — just serve the folder statically, e.g.:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open `http://localhost:8000`.

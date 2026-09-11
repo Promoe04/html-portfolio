@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Ranking — Moemen Ghazzawi</title>
+<meta name="description" content="A small JavaScript app to rate and rank your favorite movies.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><defs><linearGradient id=%22g%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22><stop offset=%220%22 stop-color=%22%237c5cff%22/><stop offset=%221%22 stop-color=%22%2322d3ee%22/></linearGradient></defs><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22url(%23g)%22/><text x=%2250%22 y=%2266%22 font-size=%2255%22 font-family=%22Arial%22 font-weight=%22700%22 fill=%22%230a0e17%22 text-anchor=%22middle%22>M</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="../index.html" class="nav__brand"><span class="dot"></span> Moemen Ghazzawi</a>
+    <ul class="nav__links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./contact.html" class="btn btn--primary btn--sm">Get in touch</a></li>
+    </ul>
+    <button class="nav__toggle" aria-label="Toggle menu">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Home</a> / <a href="../index.html#projects">Projects</a> / Movie Ranking</div>
+    <div class="project-card__tags" style="margin-bottom:16px;"><span class="tag">JavaScript</span><span class="tag">localStorage</span></div>
+    <h1>Movie Ranking</h1>
+    <p class="hero__lede" style="margin-top:16px;">Add movies you've watched, rate them out of 5 stars, and the list ranks itself automatically. Your ratings are saved in your browser.</p>
+  </div>
+</header>
+
+<main>
+  <section class="section section--tight">
+    <div class="container">
+      <div class="movie-app reveal">
+
+        <div class="card">
+          <h2 class="section__title" style="font-size:1.2rem; margin-bottom:18px;">Ranked list</h2>
+          <div class="movie-list" id="movie-list">
+            <p class="empty-state" id="empty-state">No movies yet — add your first one to see it ranked here.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 class="section__title" style="font-size:1.2rem; margin-bottom:18px;">Add a movie</h2>
+          <form class="form" id="movie-form">
+            <div class="field">
+              <label for="movie-title">Title</label>
+              <input type="text" id="movie-title" placeholder="e.g. Interstellar" required>
+            </div>
+            <div class="field">
+              <label for="movie-year">Year (optional)</label>
+              <input type="text" id="movie-year" placeholder="e.g. 2014" maxlength="4" inputmode="numeric">
+            </div>
+            <div class="field">
+              <label>Your rating</label>
+              <div class="movie-row__stars" id="rating-input" style="gap:6px;">
+                <svg class="star" data-value="1" width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9 12 2"/></svg>
+                <svg class="star" data-value="2" width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9 12 2"/></svg>
+                <svg class="star" data-value="3" width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9 12 2"/></svg>
+                <svg class="star" data-value="4" width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9 12 2"/></svg>
+                <svg class="star" data-value="5" width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9 12 2"/></svg>
+              </div>
+            </div>
+            <button type="submit" class="btn btn--primary">Add to ranking</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <span>&copy; <span data-year></span> M. Moemen Ghazzawi. Built with HTML, CSS &amp; JavaScript.</span>
+    <div class="footer__socials">
+      <a href="https://github.com/promoe04" target="_blank" rel="noopener">GitHub</a>
+      <a href="./contact.html">Email</a>
+      <a href="../index.html">Home</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/movie-ranking.js"></script>
+</body>
+</html>
