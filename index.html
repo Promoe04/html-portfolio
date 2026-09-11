@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moemen Ghazzawi — Portfolio</title>
+<meta name="description" content="M. Moemen Ghazzawi — second-year Computer Science student. Explore projects, skills, and ways to get in touch.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><defs><linearGradient id=%22g%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22><stop offset=%220%22 stop-color=%22%237c5cff%22/><stop offset=%221%22 stop-color=%22%2322d3ee%22/></linearGradient></defs><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22url(%23g)%22/><text x=%2250%22 y=%2266%22 font-size=%2255%22 font-family=%22Arial%22 font-weight=%22700%22 fill=%22%230a0e17%22 text-anchor=%22middle%22>M</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="./index.html" class="nav__brand"><span class="dot"></span> Moemen Ghazzawi</a>
+    <ul class="nav__links">
+      <li><a href="./index.html" class="is-active">Home</a></li>
+      <li><a href="./index.html#projects">Projects</a></li>
+      <li><a href="./index.html#skills">Skills</a></li>
+      <li><a href="./public/about.html">About</a></li>
+      <li><a href="./public/contact.html" class="btn btn--primary btn--sm">Get in touch</a></li>
+    </ul>
+    <button class="nav__toggle" aria-label="Toggle menu">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <span class="hero__eyebrow"><span class="pulse"></span> Open to internships &amp; collaborations</span>
+    <h1>Building clean, <span class="grad">thoughtful software</span> — one project at a time.</h1>
+    <p class="hero__lede">
+      I'm Moemen Ghazzawi, a second-year Computer Science student who enjoys turning
+      small ideas into fully working web projects — from interactive UI to the logic
+      underneath it.
+    </p>
+    <div class="hero__actions">
+      <a href="#projects" class="btn btn--primary">View my projects</a>
+      <a href="./public/about.html" class="btn btn--ghost">More about me</a>
+    </div>
+    <div class="hero__stats">
+      <div class="hero__stat"><b>2nd</b><span>Year CS student</span></div>
+      <div class="hero__stat"><b>2+</b><span>Projects shipped</span></div>
+      <div class="hero__stat"><b>3</b><span>Languages in daily use</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="section section--tight" id="about-preview">
+    <div class="container">
+      <div class="grid grid--2 reveal">
+        <div class="card">
+          <span class="section__kicker">Who I am</span>
+          <h2 class="section__title" style="font-size:1.6rem;">A CS student who likes to build, not just study.</h2>
+          <p class="section__desc">
+            I'm currently in my second year of a Computer Science degree, spending most
+            of my free time writing code outside the classroom — usually small web apps
+            that solve a real, specific problem I ran into.
+          </p>
+        </div>
+        <div class="card">
+          <span class="section__kicker">How I work</span>
+          <h2 class="section__title" style="font-size:1.6rem;">Simple, functional, and easy to read.</h2>
+          <p class="section__desc">
+            No unnecessary complexity. I try to keep every project focused: a clear
+            purpose, a clean interface, and code that stays readable six months later.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__kicker">Selected work</span>
+        <h2 class="section__title">Projects</h2>
+        <p class="section__desc">A few things I've built while learning — each one is a small, self-contained web app.</p>
+      </div>
+
+      <div class="grid grid--3">
+
+        <a href="./public/movie-ranking.html" class="card project-card reveal">
+          <div class="project-card__thumb thumb--movie">
+            <div class="thumb-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#cbbcff" stroke-width="1.6"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9 12 2"/></svg>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags"><span class="tag">JavaScript</span><span class="tag">localStorage</span></div>
+            <h3 class="project-card__title">Movie Ranking</h3>
+            <p class="project-card__desc">Add movies, rate them with a 5-star system, and watch the list auto-sort itself into a live ranking.</p>
+            <span class="project-card__link">Open project
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="./public/birthday-invite.html" class="card project-card reveal">
+          <div class="project-card__thumb thumb--birthday">
+            <div class="thumb-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ffb3d9" stroke-width="1.6"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/><path d="M4 11V9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2"/><path d="M12 7V3"/><path d="M9 3c0 1.5 1.5 2 1.5 2S12 4.5 12 3"/><path d="M15 3c0 1.5-1.5 2-1.5 2"/></svg>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags"><span class="tag">HTML/CSS</span><span class="tag">Animation</span></div>
+            <h3 class="project-card__title">Birthday Invite</h3>
+            <p class="project-card__desc">An animated digital invitation with a live countdown timer to the big day.</p>
+            <span class="project-card__link">Open project
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <div class="card project-card reveal">
+          <div class="project-card__thumb thumb--soon">
+            <div class="thumb-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags"><span class="tag">In progress</span></div>
+            <h3 class="project-card__title">More on the way</h3>
+            <p class="project-card__desc">I'm actively building — new projects get added here as I finish them.</p>
+            <span class="project-card__link" style="color:var(--text-faint);">Stay tuned</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__kicker">Toolbox</span>
+        <h2 class="section__title">Skills</h2>
+        <p class="section__desc">What I've been practicing in and out of coursework.</p>
+      </div>
+
+      <div class="grid grid--2 reveal">
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div class="skill-pill">
+            <span>HTML &amp; CSS</span>
+            <div class="skill-pill__bar"><div class="skill-pill__fill" data-level="90%"></div></div>
+          </div>
+          <div class="skill-pill">
+            <span>JavaScript</span>
+            <div class="skill-pill__bar"><div class="skill-pill__fill" data-level="75%"></div></div>
+          </div>
+          <div class="skill-pill">
+            <span>Git &amp; GitHub</span>
+            <div class="skill-pill__bar"><div class="skill-pill__fill" data-level="70%"></div></div>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div class="skill-pill">
+            <span>Data Structures &amp; Algorithms</span>
+            <div class="skill-pill__bar"><div class="skill-pill__fill" data-level="65%"></div></div>
+          </div>
+          <div class="skill-pill">
+            <span>Python / C</span>
+            <div class="skill-pill__bar"><div class="skill-pill__fill" data-level="68%"></div></div>
+          </div>
+          <div class="skill-pill">
+            <span>Problem Solving</span>
+            <div class="skill-pill__bar"><div class="skill-pill__fill" data-level="80%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta reveal">
+        <span class="section__kicker">Let's talk</span>
+        <h2 class="section__title">Have an idea, an opportunity, or just want to say hi?</h2>
+        <p class="section__desc" style="margin-inline:auto;">I'm always happy to hear from people building interesting things.</p>
+        <div class="hero__actions" style="justify-content:center; margin-top:28px;">
+          <a href="./public/contact.html" class="btn btn--primary">Contact me</a>
+          <a href="./public/about.html" class="btn btn--ghost">Read my story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <span>&copy; <span data-year></span> M. Moemen Ghazzawi. Built with HTML, CSS &amp; JavaScript.</span>
+    <div class="footer__socials">
+      <a href="https://github.com/promoe04" target="_blank" rel="noopener">GitHub</a>
+      <a href="./public/contact.html">Email</a>
+      <a href="./public/about.html">About</a>
+    </div>
+  </div>
+</footer>
+
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
