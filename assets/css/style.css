@@ -358,7 +358,20 @@ p { margin: 0; }
 }
 
 .project-card__title { font-size: 1.2rem; font-weight: 700; }
-.project-card__desc { color: var(--text-dim); font-size: 0.94rem; flex: 1; }
+.project-card__desc { color: var(--text-dim); font-size: 0.94rem; }
+
+.project-card__features {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: var(--text-dim);
+  font-size: 0.88rem;
+  flex: 1;
+}
+
+.project-card__features li::marker { color: var(--accent-2); }
 
 .project-card__link {
   display: inline-flex;
@@ -369,13 +382,19 @@ p { margin: 0; }
   color: var(--accent-2);
 }
 
+.project-card__private {
+  font-weight: 500;
+  color: var(--text-faint);
+}
+
 .project-card__link svg { transition: transform 0.2s ease; }
 .project-card:hover .project-card__link svg { transform: translate(3px, -3px); }
 
 /* Thumb variants (pure CSS illustrations, no external images) */
-.thumb--movie { background: linear-gradient(135deg, #2a1a52, #120c24); }
-.thumb--birthday { background: linear-gradient(135deg, #3a1030, #170a22); }
-.thumb--soon { background: linear-gradient(135deg, #0f1f2e, #0a1420); }
+.thumb--tutorly { background: linear-gradient(135deg, #163425, #0a1912); }
+.thumb--titan { background: linear-gradient(135deg, #391a3f, #170a22); }
+
+.project-card--major .project-card__thumb { height: 140px; }
 
 .thumb-icon {
   width: 56px; height: 56px;

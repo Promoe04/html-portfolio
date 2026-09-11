@@ -7,19 +7,17 @@ student. Built with plain HTML, CSS, and JavaScript — no frameworks, no build 
 
 ```
 .
-├── index.html                     Home page
+├── index.html                Home page — featured projects, skills
 ├── assets/
-│   ├── css/style.css               Shared design system
-│   └── js/
-│       ├── main.js                 Nav toggle, scroll reveal, skill bars
-│       ├── movie-ranking.js         Movie Ranking project logic
-│       └── birthday.js              Birthday Invite countdown + confetti
+│   ├── css/style.css          Shared design system
+│   └── js/main.js             Nav toggle, scroll reveal, skill bars
 └── public/
-    ├── about.html                  About page
-    ├── contact.html                Contact page
-    ├── movie-ranking.html          Project: rate & rank movies
-    └── birthday-invite.html        Project: animated birthday invite
+    ├── about.html             About page
+    └── contact.html           Contact page
 ```
+
+Featured projects (Tutorly, Tic-Tac-Toe Titan) link out to their own
+repositories rather than living in this one.
 
 ## Running locally
 
