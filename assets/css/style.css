@@ -395,6 +395,7 @@ p { margin: 0; }
 /* Thumb variants (pure CSS illustrations, no external images) */
 .thumb--tutorly { background: linear-gradient(135deg, #163425, #0a1912); }
 .thumb--titan { background: linear-gradient(135deg, #391a3f, #170a22); }
+.thumb--xo { background: linear-gradient(135deg, #3d1f0a, #1f0a06); }
 .thumb--hospital-db { background: linear-gradient(135deg, #142a3d, #0a1420); }
 .thumb--hospital-ds { background: linear-gradient(135deg, #1a2044, #0c0f22); }
 .thumb--dblec { background: linear-gradient(135deg, #241a38, #120c1f); }
