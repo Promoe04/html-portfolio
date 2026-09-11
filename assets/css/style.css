@@ -477,13 +477,21 @@ p { margin: 0; }
 .footer__socials a { color: var(--text-dim); transition: color 0.2s ease; }
 .footer__socials a:hover { color: var(--text); }
 
-/* ---------- Reveal animation ---------- */
-.reveal {
+/* ---------- Reveal animation ----------
+   Visible by default so content never depends on JS running, a scroll
+   happening, or a crawler/print view simulating either. JS opts elements
+   into the hidden "armed" state right before observing them, so the
+   fade-in is a progressive enhancement, not a requirement to see the page. */
+.reveal.reveal-armed {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+@media print {
+  .reveal { opacity: 1 !important; transform: none !important; }
+}
 
 /* ---------- Misc pages ---------- */
 .page-hero {
