@@ -1,7 +1,8 @@
 # Moemen Ghazzawi — Portfolio
 
-A personal portfolio site for M. Moemen Ghazzawi, a second-year Computer Science
-student. Built with plain HTML, CSS, and JavaScript — no frameworks, no build step.
+A personal portfolio site for M. Moemen Ghazzawi, a third-year Computer Science
+student and robotics instructor. Built with plain HTML, CSS, and JavaScript — no
+frameworks, no build step.
 
 ## Structure
 
